@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+    <!-- AWS Cloud Background -->
+    <defs>
+        <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f0f0f0" stroke-width="1"/>
+        </pattern>
+    </defs>
+    <rect width="800" height="400" fill="url(#grid)"/>
+    
+    <!-- AWS Origin -->
+    <g transform="translate(100,50)">
+        <rect x="0" y="0" width="600" height="300" rx="15" fill="#232f3e" opacity="0.9"/>
+        <text x="300" y="40" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Netflix Content Origin (AWS)</text>
+        
+        <!-- Content Processing Pipeline -->
+        <g transform="translate(50,80)">
+            <!-- Original Content -->
+            <rect x="0" y="0" width="120" height="80" rx="5" fill="#e50914"/>
+            <text x="60" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Original</text>
+            
+            <!-- Encoding Process -->
+            <g transform="translate(170,0)">
+                <rect x="0" y="0" width="120" height="80" rx="5" fill="#ff8c00"/>
+                <text x="60" y="45" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Encoding</text>
+            </g>
+            
+            <!-- Quality Variants -->
+            <g transform="translate(340,0)">
+                <rect x="0" y="0" width="160" height="160" rx="5" fill="#4CAF50"/>
+                <text x="80" y="30" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Quality Variants</text>
+                <text x="80" y="60" font-family="Arial" font-size="12" fill="white" text-anchor="middle">4K (15-20 Mbps)</text>
+                <text x="80" y="90" font-family="Arial" font-size="12" fill="white" text-anchor="middle">1080p (5 Mbps)</text>
+                <text x="80" y="120" font-family="Arial" font-size="12" fill="white" text-anchor="middle">720p (2.5 Mbps)</text>
+                <text x="80" y="150" font-family="Arial" font-size="12" fill="white" text-anchor="middle">SD (1 Mbps)</text>
+            </g>
+        </g>
+
+        <!-- Flow Arrows -->
+        <g transform="translate(50,120)" stroke="#ffffff" stroke-width="2" fill="none">
+            <path d="M120,0 L170,0" marker-end="url(#arrowhead)"/>
+            <path d="M290,0 L340,0" marker-end="url(#arrowhead)"/>
+        </g>
+
+        <!-- Key Metrics -->
+        <g transform="translate(50,220)">
+            <rect x="0" y="0" width="500" height="60" rx="5" fill="#1a1a1a"/>
+            <text x="20" y="25" font-family="Arial" font-size="14" fill="#00ff00">Storage Capacity: 100+ PB</text>
+            <text x="20" y="45" font-family="Arial" font-size="14" fill="#00ff00">Processing: 1 PB/day of new content</text>
+        </g>
+    </g>
+
+    <!-- Arrow Marker -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff"/>
+        </marker>
+    </defs>
+</svg>

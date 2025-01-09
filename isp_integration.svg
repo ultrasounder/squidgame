@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+    <!-- ISP Network Container -->
+    <g transform="translate(30,30)">
+        <!-- ISP Network Border -->
+        <rect x="0" y="0" width="540" height="340" rx="15" 
+              fill="#f8fafc" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,5"/>
+        <text x="20" y="30" font-family="Arial" font-size="18" fill="#334155">ISP Network Infrastructure</text>
+
+        <!-- Internet Exchange Point -->
+        <g transform="translate(80,100)">
+            <rect x="-40" y="-25" width="80" height="50" rx="8" fill="#3b82f6"/>
+            <text x="0" y="5" font-family="Arial" font-size="12" fill="white" text-anchor="middle">IXP</text>
+            <text x="0" y="40" font-family="Arial" font-size="10" fill="#334155" text-anchor="middle">100+ Gbps</text>
+        </g>
+
+        <!-- Private Network Interconnect -->
+        <g transform="translate(200,100)">
+            <rect x="-40" y="-25" width="80" height="50" rx="8" fill="#8b5cf6"/>
+            <text x="0" y="5" font-family="Arial" font-size="12" fill="white" text-anchor="middle">PNI</text>
+            <text x="0" y="40" font-family="Arial" font-size="10" fill="#334155" text-anchor="middle">400+ Gbps</text>
+        </g>
+
+        <!-- OCAs -->
+        <g transform="translate(320,100)">
+            <rect x="-60" y="-35" width="120" height="70" rx="8" fill="#10b981"/>
+            <text x="0" y="-10" font-family="Arial" font-size="12" fill="white" text-anchor="middle">OCA Cluster</text>
+            <text x="0" y="10" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Storage: 100+ TB</text>
+            <text x="0" y="25" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Throughput: 160 Gbps</text>
+        </g>
+
+        <!-- ISP Core Network -->
+        <g transform="translate(270,250)">
+            <rect x="-100" y="-25" width="200" height="50" rx="8" fill="#f97316"/>
+            <text x="0" y="5" font-family="Arial" font-size="12" fill="white" text-anchor="middle">ISP Core Network</text>
+        </g>
+
+        <!-- Connection Lines -->
+        <g stroke="#64748b" stroke-width="2">
+            <!-- IXP to Core -->
+            <path d="M80,125 Q80,250 170,250" class="flow-path"/>
+            <!-- PNI to Core -->
+            <path d="M200,125 Q200,200 270,250" class="flow-path"/>
+            <!-- OCA to Core -->
+            <path d="M320,135 Q320,200 320,250" class="flow-path"/>
+        </g>
+
+        <!-- Metrics Display -->
+        <g transform="translate(430,70)">
+            <rect x="0" y="0" width="90" height="120" rx="5" fill="white" stroke="#e2e8f0"/>
+            <text x="10" y="20" font-family="Arial" font-size="10" fill="#334155">Peak Traffic</text>
+            <text x="10" y="40" font-family="Arial" font-size="10" fill="#334155">Cache Hit: 95%</text>
+            <text x="10" y="60" font-family="Arial" font-size="10" fill="#334155">Latency: 5ms</text>
+            <text x="10" y="80" font-family="Arial" font-size="10" fill="#334155">Off-Net: -60%</text>
+            <text x="10" y="100" font-family="Arial" font-size="10" fill="#334155">BW Saved: 80%</text>
+        </g>
+    </g>
+</svg>
